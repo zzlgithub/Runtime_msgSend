@@ -1,37 +1,44 @@
 //
-//  FourViewController.m
+//  SecondViewController.m
 //  Runtime
 //
 //  Created by zhangzhenglong on 2017/6/3.
 //  Copyright © 2017年 zhangzhenglong. All rights reserved.
 //
 
-#import "FourViewController.h"
+#import "SecondViewController.h"
 #import <objc/message.h>
-#import "ViewController.h"
+#import "FirstViewController.h"
 
+@interface SecondViewController ()
 
-@interface FourViewController ()
-@property (nonatomic,strong)ViewController * fourVc;
-@property (weak, nonatomic) IBOutlet UILabel *lable;
-
+@property (nonatomic,strong)FirstViewController * secVc;
 
 @end
 
-@implementation FourViewController
+@implementation SecondViewController
 
-- (ViewController *)fourVc{
-    if (nil == _fourVc) {
-        _fourVc = [[ViewController alloc] init];
+- (FirstViewController *)secVc{
+    if (nil == _secVc) {
+        _secVc = [[FirstViewController alloc] init];
     }
-    return _fourVc;
+    return _secVc;
 }
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+    UILabel * lable = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 200, 20)];
+    lable.text = @"观看打印日志";
+    [self.view addSubview:lable];
+    
+    
+    /**
+     *  发送消息
+     */
     objc_msgSend(self,@selector(messageForwordTo));
 }
+
 
 #pragma mark   -----  runtime消息转发 -------
 
@@ -39,14 +46,18 @@
  * 1. 对象在接收到未知的消息时，首先会调用所属类的类方法+resolveInstanceMethod:(实例方法)或者+resolveClassMethod:(类方法),在这个方法中，我们有机会为该未知消息新增一个”处理方法”“。不过使用该方法的前提是我们已经实现了该”处理方法”，只需要在运行时通过class_addMethod函数动态添加到类里面就可以了
  */
 
-void functonForMethod(id self, SEL _cmd)
+
+#pragma mark   ------- 处理1.动态添加方法后不会重定向后面 2 3步骤--------
+
+
+void functionForMethod(id self, SEL _cmd)
 {
-    NSLog(@"动态添加方法");
+    NSLog(@"执行第一步动态添加方法");
 }
 
 
 + (BOOL)resolveInstanceMethod:(SEL)sel{
-
+    
     /*
      此时如果还未处理  既没有动态添加方法  则会调用
      - (id)forwardingTargetForSelector:(SEL)aSelector
@@ -54,15 +65,16 @@ void functonForMethod(id self, SEL _cmd)
      
      */
     
-//    NSString * selectorString = NSStringFromSelector(sel);
-//    if ([selectorString isEqualToString:@"messageForwordTo"])
-//    {
-//        BOOL result = class_addMethod(self,sel,(IMP)functonForMethod,"v@:");
-//        if (result) {
-//            NSLog(@"动态添加方法成功");
-//        }
-//        return YES;
-//    }
+    NSString * selectorString = NSStringFromSelector(sel);
+
+    if ([selectorString isEqualToString:@"messageForwordTo"])
+    {
+        BOOL result = class_addMethod(self,sel,(IMP)functionForMethod,"v@:");
+        if (result) {
+            NSLog(@"动态添加方法成功");
+        }
+        return YES;
+    }
     return [super resolveInstanceMethod:sel];
 }
 
@@ -75,21 +87,17 @@ void functonForMethod(id self, SEL _cmd)
  */
 
 - (id)forwardingTargetForSelector:(SEL)aSelector{
-//    NSString * selectorString = NSStringFromSelector(aSelector);
+    NSString * selectorString = NSStringFromSelector(aSelector);
     // 将消息交给要转发的对象来处理
-//    if ([selectorString isEqualToString:@"messageForwordTo"]) {
-//        
-//        //此时在SecViewController会调用 messageForwordTo 方法  相当于  ViewController类继承了  SecViewController 这类
-//        return _fourVc;
-//    }
-//    
+    if ([selectorString isEqualToString:@"messageForwordTo"]) {
+        
+        //此时在SecViewController会调用 messageForwordTo 方法  相当于  ViewController类继承了  SecViewController 这类
+        return _secVc;
+    }
+    
     
     return [super forwardingTargetForSelector:aSelector];
 }
-
-
-
-#pragma mark   1  2 步骤都不处理或者都未实现  执行  3 .转发消息
 
 
 /**
@@ -120,12 +128,9 @@ void functonForMethod(id self, SEL _cmd)
 {
     SEL selector = [anInvocation selector];
     // self.secVC需要转发消息的对象
-    if ([self.fourVc respondsToSelector:selector]) {
-        
-        self.lable.text = @"没有处理1.2.步  执行第三步 消息签名转发";
-        NSLog(@"没有处理1.2.步  执行第三步 消息签名转发");
+    if ([self.secVc respondsToSelector:selector]) {
         //唤醒这个方法
-        [anInvocation invokeWithTarget:self.fourVc];
+        [anInvocation invokeWithTarget:self.secVc];
     }
 }
 

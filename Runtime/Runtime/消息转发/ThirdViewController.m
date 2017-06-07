@@ -8,20 +8,18 @@
 
 #import "ThirdViewController.h"
 #import <objc/message.h>
-#import "ViewController.h"
+#import "FirstViewController.h"
 
 @interface ThirdViewController ()
-@property (nonatomic,strong)ViewController * thirdVc;
-
-@property (weak, nonatomic) IBOutlet UILabel *lable;
+@property (nonatomic,strong)FirstViewController * thirdVc;
 
 @end
 
 @implementation ThirdViewController
 
-- (ViewController *)thirdVc{
+- (FirstViewController *)thirdVc{
     if (nil == _thirdVc) {
-        _thirdVc = [[ViewController alloc] init];
+        _thirdVc = [[FirstViewController alloc] init];
     }
     return _thirdVc;
 }
@@ -29,6 +27,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    UILabel * lable = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 200, 20)];
+    lable.text = @"观看打印日志";
+    [self.view addSubview:lable];
+    
+    /**
+     *  发送消息
+     */
     objc_msgSend(self,@selector(messageForwordTo));
     // Do any additional setup after loading the view.
 }
@@ -83,8 +90,6 @@ void funcForMethod(id self, SEL _cmd)
     if ([selectorString isEqualToString:@"messageForwordTo"]) {
         
         NSLog(@"没有处理1.动态添加方法  执行第二步 消息重定向转发机制");
-        
-        self.lable.text = @"没有处理1.动态添加方法  执行第二步 消息重定向转发机制";
         //此时在SecViewController会调用 messageForwordTo 方法  相当于  ViewController类继承了  SecViewController 这类
         return _thirdVc;
     }
