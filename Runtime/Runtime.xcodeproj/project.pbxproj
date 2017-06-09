@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F612D3E41EEA4BF500BBABF2 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F612D3E31EEA4BF500BBABF2 /* OneViewController.m */; };
+		F612D3E71EEA4C2400BBABF2 /* UIGestureRecognizer+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = F612D3E61EEA4C2400BBABF2 /* UIGestureRecognizer+Block.m */; };
+		F612D3EC1EEA5D2200BBABF2 /* SwizzlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F612D3EA1EEA5D2200BBABF2 /* SwizzlingViewController.m */; };
+		F612D3ED1EEA5D2200BBABF2 /* SwizzlingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F612D3EB1EEA5D2200BBABF2 /* SwizzlingViewController.xib */; };
+		F612D3F01EEA5D7E00BBABF2 /* NSURL+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = F612D3EF1EEA5D7E00BBABF2 /* NSURL+Swizzling.m */; };
+		F612D3F41EEA646600BBABF2 /* NSObject+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = F612D3F31EEA646600BBABF2 /* NSObject+Model.m */; };
+		F612D3F81EEA647800BBABF2 /* DicMoldelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F612D3F61EEA647800BBABF2 /* DicMoldelViewController.m */; };
+		F612D3F91EEA647800BBABF2 /* DicMoldelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F612D3F71EEA647800BBABF2 /* DicMoldelViewController.xib */; };
+		F612D3FC1EEA648800BBABF2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F612D3FB1EEA648800BBABF2 /* Person.m */; };
+		F612D4011EEA69E600BBABF2 /* MethodAndPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F612D3FF1EEA69E600BBABF2 /* MethodAndPropertyViewController.m */; };
+		F612D4021EEA69E600BBABF2 /* MethodAndPropertyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F612D4001EEA69E600BBABF2 /* MethodAndPropertyViewController.xib */; };
+		F612D4071EEA6F8800BBABF2 /* ModifyPrivatePropertyController.m in Sources */ = {isa = PBXBuildFile; fileRef = F612D4061EEA6F8800BBABF2 /* ModifyPrivatePropertyController.m */; };
+		F612D40A1EEA6FBF00BBABF2 /* SerializationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F612D4091EEA6FBF00BBABF2 /* SerializationController.m */; };
+		F612D40D1EEA704C00BBABF2 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = F612D40C1EEA704C00BBABF2 /* Student.m */; };
+		F612D4111EEA7AF100BBABF2 /* MethodAndPropertyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F612D40F1EEA7AF100BBABF2 /* MethodAndPropertyCell.m */; };
+		F612D4121EEA7AF100BBABF2 /* MethodAndPropertyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F612D4101EEA7AF100BBABF2 /* MethodAndPropertyCell.xib */; };
+		F612D4151EEA853900BBABF2 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = F612D4141EEA853900BBABF2 /* Teacher.m */; };
 		F6533BFB1EE829F800051ECC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6533BFA1EE829F800051ECC /* RootViewController.m */; };
 		F6533C051EE82A3A00051ECC /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6533BFE1EE82A3A00051ECC /* FourViewController.m */; };
 		F6533C061EE82A3A00051ECC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6533C001EE82A3A00051ECC /* SecondViewController.m */; };
@@ -40,6 +57,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F612D3E21EEA4BF500BBABF2 /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		F612D3E31EEA4BF500BBABF2 /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		F612D3E51EEA4C2400BBABF2 /* UIGestureRecognizer+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+Block.h"; sourceTree = "<group>"; };
+		F612D3E61EEA4C2400BBABF2 /* UIGestureRecognizer+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+Block.m"; sourceTree = "<group>"; };
+		F612D3E91EEA5D2200BBABF2 /* SwizzlingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwizzlingViewController.h; sourceTree = "<group>"; };
+		F612D3EA1EEA5D2200BBABF2 /* SwizzlingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwizzlingViewController.m; sourceTree = "<group>"; };
+		F612D3EB1EEA5D2200BBABF2 /* SwizzlingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwizzlingViewController.xib; sourceTree = "<group>"; };
+		F612D3EE1EEA5D7E00BBABF2 /* NSURL+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Swizzling.h"; sourceTree = "<group>"; };
+		F612D3EF1EEA5D7E00BBABF2 /* NSURL+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Swizzling.m"; sourceTree = "<group>"; };
+		F612D3F21EEA646600BBABF2 /* NSObject+Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Model.h"; sourceTree = "<group>"; };
+		F612D3F31EEA646600BBABF2 /* NSObject+Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Model.m"; sourceTree = "<group>"; };
+		F612D3F51EEA647800BBABF2 /* DicMoldelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DicMoldelViewController.h; sourceTree = "<group>"; };
+		F612D3F61EEA647800BBABF2 /* DicMoldelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DicMoldelViewController.m; sourceTree = "<group>"; };
+		F612D3F71EEA647800BBABF2 /* DicMoldelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DicMoldelViewController.xib; sourceTree = "<group>"; };
+		F612D3FA1EEA648800BBABF2 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		F612D3FB1EEA648800BBABF2 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		F612D3FE1EEA69E600BBABF2 /* MethodAndPropertyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodAndPropertyViewController.h; sourceTree = "<group>"; };
+		F612D3FF1EEA69E600BBABF2 /* MethodAndPropertyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodAndPropertyViewController.m; sourceTree = "<group>"; };
+		F612D4001EEA69E600BBABF2 /* MethodAndPropertyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MethodAndPropertyViewController.xib; sourceTree = "<group>"; };
+		F612D4051EEA6F8800BBABF2 /* ModifyPrivatePropertyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyPrivatePropertyController.h; sourceTree = "<group>"; };
+		F612D4061EEA6F8800BBABF2 /* ModifyPrivatePropertyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyPrivatePropertyController.m; sourceTree = "<group>"; };
+		F612D4081EEA6FBF00BBABF2 /* SerializationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerializationController.h; sourceTree = "<group>"; };
+		F612D4091EEA6FBF00BBABF2 /* SerializationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SerializationController.m; sourceTree = "<group>"; };
+		F612D40B1EEA704C00BBABF2 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		F612D40C1EEA704C00BBABF2 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		F612D40E1EEA7AF100BBABF2 /* MethodAndPropertyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodAndPropertyCell.h; sourceTree = "<group>"; };
+		F612D40F1EEA7AF100BBABF2 /* MethodAndPropertyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodAndPropertyCell.m; sourceTree = "<group>"; };
+		F612D4101EEA7AF100BBABF2 /* MethodAndPropertyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MethodAndPropertyCell.xib; sourceTree = "<group>"; };
+		F612D4131EEA853900BBABF2 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		F612D4141EEA853900BBABF2 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
 		F6533BF91EE829F800051ECC /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		F6533BFA1EE829F800051ECC /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		F6533BFD1EE82A3A00051ECC /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
@@ -92,6 +139,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F612D3E11EEA4B2600BBABF2 /* 动态添加属性 */ = {
+			isa = PBXGroup;
+			children = (
+				F612D3E21EEA4BF500BBABF2 /* OneViewController.h */,
+				F612D3E31EEA4BF500BBABF2 /* OneViewController.m */,
+				F612D3E51EEA4C2400BBABF2 /* UIGestureRecognizer+Block.h */,
+				F612D3E61EEA4C2400BBABF2 /* UIGestureRecognizer+Block.m */,
+			);
+			path = "动态添加属性";
+			sourceTree = "<group>";
+		};
+		F612D3E81EEA5D1200BBABF2 /* 交换方法 */ = {
+			isa = PBXGroup;
+			children = (
+				F612D3E91EEA5D2200BBABF2 /* SwizzlingViewController.h */,
+				F612D3EA1EEA5D2200BBABF2 /* SwizzlingViewController.m */,
+				F612D3EB1EEA5D2200BBABF2 /* SwizzlingViewController.xib */,
+				F612D3EE1EEA5D7E00BBABF2 /* NSURL+Swizzling.h */,
+				F612D3EF1EEA5D7E00BBABF2 /* NSURL+Swizzling.m */,
+			);
+			path = "交换方法";
+			sourceTree = "<group>";
+		};
+		F612D3F11EEA643800BBABF2 /* 字典转模型 */ = {
+			isa = PBXGroup;
+			children = (
+				F612D3F21EEA646600BBABF2 /* NSObject+Model.h */,
+				F612D3F31EEA646600BBABF2 /* NSObject+Model.m */,
+				F612D3F51EEA647800BBABF2 /* DicMoldelViewController.h */,
+				F612D3F61EEA647800BBABF2 /* DicMoldelViewController.m */,
+				F612D3F71EEA647800BBABF2 /* DicMoldelViewController.xib */,
+				F612D3FA1EEA648800BBABF2 /* Person.h */,
+				F612D3FB1EEA648800BBABF2 /* Person.m */,
+			);
+			path = "字典转模型";
+			sourceTree = "<group>";
+		};
+		F612D3FD1EEA69BE00BBABF2 /* 获取类的属性和方法 */ = {
+			isa = PBXGroup;
+			children = (
+				F612D3FE1EEA69E600BBABF2 /* MethodAndPropertyViewController.h */,
+				F612D3FF1EEA69E600BBABF2 /* MethodAndPropertyViewController.m */,
+				F612D4001EEA69E600BBABF2 /* MethodAndPropertyViewController.xib */,
+				F612D40E1EEA7AF100BBABF2 /* MethodAndPropertyCell.h */,
+				F612D40F1EEA7AF100BBABF2 /* MethodAndPropertyCell.m */,
+				F612D4101EEA7AF100BBABF2 /* MethodAndPropertyCell.xib */,
+			);
+			path = "获取类的属性和方法";
+			sourceTree = "<group>";
+		};
+		F612D4031EEA6F2200BBABF2 /* 修改私有属性 */ = {
+			isa = PBXGroup;
+			children = (
+				F612D4051EEA6F8800BBABF2 /* ModifyPrivatePropertyController.h */,
+				F612D4061EEA6F8800BBABF2 /* ModifyPrivatePropertyController.m */,
+				F612D40B1EEA704C00BBABF2 /* Student.h */,
+				F612D40C1EEA704C00BBABF2 /* Student.m */,
+			);
+			path = "修改私有属性";
+			sourceTree = "<group>";
+		};
+		F612D4041EEA6F2200BBABF2 /* 序列化 */ = {
+			isa = PBXGroup;
+			children = (
+				F612D4081EEA6FBF00BBABF2 /* SerializationController.h */,
+				F612D4091EEA6FBF00BBABF2 /* SerializationController.m */,
+				F612D4131EEA853900BBABF2 /* Teacher.h */,
+				F612D4141EEA853900BBABF2 /* Teacher.m */,
+			);
+			path = "序列化";
+			sourceTree = "<group>";
+		};
 		F6533BFC1EE82A3A00051ECC /* 消息转发 */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +250,12 @@
 		F67BA80B1EE2953800DAFC50 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
+				F612D4031EEA6F2200BBABF2 /* 修改私有属性 */,
+				F612D4041EEA6F2200BBABF2 /* 序列化 */,
+				F612D3FD1EEA69BE00BBABF2 /* 获取类的属性和方法 */,
+				F612D3F11EEA643800BBABF2 /* 字典转模型 */,
+				F612D3E81EEA5D1200BBABF2 /* 交换方法 */,
+				F612D3E11EEA4B2600BBABF2 /* 动态添加属性 */,
 				F6533BFC1EE82A3A00051ECC /* 消息转发 */,
 				F67BA80F1EE2953800DAFC50 /* AppDelegate.h */,
 				F67BA8101EE2953800DAFC50 /* AppDelegate.m */,
@@ -281,9 +406,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F67BA81C1EE2953800DAFC50 /* LaunchScreen.storyboard in Resources */,
+				F612D3ED1EEA5D2200BBABF2 /* SwizzlingViewController.xib in Resources */,
+				F612D3F91EEA647800BBABF2 /* DicMoldelViewController.xib in Resources */,
+				F612D4121EEA7AF100BBABF2 /* MethodAndPropertyCell.xib in Resources */,
 				F6F5F4741EE8344700F9FE1B /* FirstViewController.xib in Resources */,
 				F67BA8191EE2953800DAFC50 /* Assets.xcassets in Resources */,
 				F67BA8171EE2953800DAFC50 /* Main.storyboard in Resources */,
+				F612D4021EEA69E600BBABF2 /* MethodAndPropertyViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,12 +438,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6533C061EE82A3A00051ECC /* SecondViewController.m in Sources */,
+				F612D4111EEA7AF100BBABF2 /* MethodAndPropertyCell.m in Sources */,
 				F6533BFB1EE829F800051ECC /* RootViewController.m in Sources */,
+				F612D3FC1EEA648800BBABF2 /* Person.m in Sources */,
+				F612D3F01EEA5D7E00BBABF2 /* NSURL+Swizzling.m in Sources */,
+				F612D3F41EEA646600BBABF2 /* NSObject+Model.m in Sources */,
+				F612D3E71EEA4C2400BBABF2 /* UIGestureRecognizer+Block.m in Sources */,
 				F6533C071EE82A3A00051ECC /* ThirdViewController.m in Sources */,
+				F612D4151EEA853900BBABF2 /* Teacher.m in Sources */,
 				F67BA8111EE2953800DAFC50 /* AppDelegate.m in Sources */,
+				F612D40A1EEA6FBF00BBABF2 /* SerializationController.m in Sources */,
+				F612D4071EEA6F8800BBABF2 /* ModifyPrivatePropertyController.m in Sources */,
 				F6533C051EE82A3A00051ECC /* FourViewController.m in Sources */,
 				F67BA80E1EE2953800DAFC50 /* main.m in Sources */,
+				F612D3F81EEA647800BBABF2 /* DicMoldelViewController.m in Sources */,
 				F6F5F4731EE8344700F9FE1B /* FirstViewController.m in Sources */,
+				F612D4011EEA69E600BBABF2 /* MethodAndPropertyViewController.m in Sources */,
+				F612D3EC1EEA5D2200BBABF2 /* SwizzlingViewController.m in Sources */,
+				F612D3E41EEA4BF500BBABF2 /* OneViewController.m in Sources */,
+				F612D40D1EEA704C00BBABF2 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

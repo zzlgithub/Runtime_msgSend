@@ -54,7 +54,7 @@ static NSString * const identifier = @"TableViewCell";
 #pragma mark    ------  UITableViewDelegate -------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSArray * viewControllers = @[@"FirstViewController",@"FirstViewController",@"FirstViewController",@"FirstViewController",@"FirstViewController",@"FirstViewController",@"FirstViewController"];
+    NSArray * viewControllers = @[@"FirstViewController",@"OneViewController",@"SwizzlingViewController",@"DicMoldelViewController",@"MethodAndPropertyViewController",@"ModifyPrivatePropertyController",@"SerializationController"];
     [self.navigationController pushViewController:[NSClassFromString(viewControllers[indexPath.row]) new] animated:YES];
 }
 

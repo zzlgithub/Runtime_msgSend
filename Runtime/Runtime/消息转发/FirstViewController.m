@@ -20,6 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.title = @"消息发送过程";
     // Do any additional setup after loading the view from its nib.
 }
 
