@@ -20,25 +20,25 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQK-Ug-7Fd">
-                    <rect key="frame" x="94" y="73" width="92" height="30"/>
+                    <rect key="frame" x="89" y="73" width="103" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="动态添加方法"/>
+                    <state key="normal" title="1.动态添加方法"/>
                     <connections>
                         <action selector="dynamicAddMethod:" destination="-1" eventType="touchUpInside" id="f1O-w2-meq"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SA0-B5-1cV">
-                    <rect key="frame" x="101" y="184" width="108" height="30"/>
+                    <rect key="frame" x="95" y="184" width="120" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="消息转发重定向"/>
+                    <state key="normal" title="2.消息转发重定向"/>
                     <connections>
                         <action selector="messageRedirect:" destination="-1" eventType="touchUpInside" id="3dr-cx-bnj"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6s-c1-4LN">
-                    <rect key="frame" x="109" y="308" width="62" height="30"/>
+                    <rect key="frame" x="103" y="308" width="75" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="消息转发"/>
+                    <state key="normal" title="3.消息转发"/>
                     <connections>
                         <action selector="messageForward:" destination="-1" eventType="touchUpInside" id="ZsH-w5-668"/>
                     </connections>
