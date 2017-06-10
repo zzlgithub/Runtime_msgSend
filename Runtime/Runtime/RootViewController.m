@@ -27,7 +27,7 @@ static NSString * const identifier = @"TableViewCell";
                        @"字典转模型",
                        @"获取私有属性和方法",
                        @"修改私有属性",
-                       @"归档/解档",nil];
+                       @"归档/解档",@"KVO底层实现",nil];
     }
     return _dataSource;
 }
@@ -54,7 +54,7 @@ static NSString * const identifier = @"TableViewCell";
 #pragma mark    ------  UITableViewDelegate ----
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSArray * viewControllers = @[@"FirstViewController",@"OneViewController",@"SwizzlingViewController",@"DicMoldelViewController",@"MethodAndPropertyViewController",@"ModifyPrivatePropertyController",@"SerializationController"];
+    NSArray * viewControllers = @[@"FirstViewController",@"OneViewController",@"SwizzlingViewController",@"DicMoldelViewController",@"MethodAndPropertyViewController",@"ModifyPrivatePropertyController",@"SerializationController",@"KVOViewController"];
     [self.navigationController pushViewController:[NSClassFromString(viewControllers[indexPath.row]) new] animated:YES];
 }
 

@@ -140,6 +140,9 @@ static NSString * const identifer = @"MethodAndPropertyCell";
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc{
+    
+}
 /*
 #pragma mark - Navigation
 

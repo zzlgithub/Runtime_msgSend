@@ -24,6 +24,11 @@
 		F612D4111EEA7AF100BBABF2 /* MethodAndPropertyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F612D40F1EEA7AF100BBABF2 /* MethodAndPropertyCell.m */; };
 		F612D4121EEA7AF100BBABF2 /* MethodAndPropertyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F612D4101EEA7AF100BBABF2 /* MethodAndPropertyCell.xib */; };
 		F612D4151EEA853900BBABF2 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = F612D4141EEA853900BBABF2 /* Teacher.m */; };
+		F612D4EC1EEBBB5C00BBABF2 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F612D4EA1EEBBB5C00BBABF2 /* KVOViewController.m */; };
+		F612D4ED1EEBBB5C00BBABF2 /* KVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F612D4EB1EEBBB5C00BBABF2 /* KVOViewController.xib */; };
+		F612D4F01EEBBBCF00BBABF2 /* Woman.m in Sources */ = {isa = PBXBuildFile; fileRef = F612D4EF1EEBBBCF00BBABF2 /* Woman.m */; };
+		F612D4F31EEBC93400BBABF2 /* Man.m in Sources */ = {isa = PBXBuildFile; fileRef = F612D4F21EEBC93400BBABF2 /* Man.m */; };
+		F612D4F61EEBCC6200BBABF2 /* CustomKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F612D4F51EEBCC6200BBABF2 /* CustomKVOViewController.m */; };
 		F6533BFB1EE829F800051ECC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6533BFA1EE829F800051ECC /* RootViewController.m */; };
 		F6533C051EE82A3A00051ECC /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6533BFE1EE82A3A00051ECC /* FourViewController.m */; };
 		F6533C061EE82A3A00051ECC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6533C001EE82A3A00051ECC /* SecondViewController.m */; };
@@ -87,6 +92,15 @@
 		F612D4101EEA7AF100BBABF2 /* MethodAndPropertyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MethodAndPropertyCell.xib; sourceTree = "<group>"; };
 		F612D4131EEA853900BBABF2 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
 		F612D4141EEA853900BBABF2 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		F612D4E91EEBBB5C00BBABF2 /* KVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
+		F612D4EA1EEBBB5C00BBABF2 /* KVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
+		F612D4EB1EEBBB5C00BBABF2 /* KVOViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KVOViewController.xib; sourceTree = "<group>"; };
+		F612D4EE1EEBBBCF00BBABF2 /* Woman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Woman.h; sourceTree = "<group>"; };
+		F612D4EF1EEBBBCF00BBABF2 /* Woman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Woman.m; sourceTree = "<group>"; };
+		F612D4F11EEBC93400BBABF2 /* Man.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Man.h; sourceTree = "<group>"; };
+		F612D4F21EEBC93400BBABF2 /* Man.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Man.m; sourceTree = "<group>"; };
+		F612D4F41EEBCC6200BBABF2 /* CustomKVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomKVOViewController.h; sourceTree = "<group>"; };
+		F612D4F51EEBCC6200BBABF2 /* CustomKVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomKVOViewController.m; sourceTree = "<group>"; };
 		F6533BF91EE829F800051ECC /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		F6533BFA1EE829F800051ECC /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		F6533BFD1EE82A3A00051ECC /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
@@ -211,6 +225,22 @@
 			path = "序列化";
 			sourceTree = "<group>";
 		};
+		F612D4E81EEBBB4400BBABF2 /* KVO实现原理 */ = {
+			isa = PBXGroup;
+			children = (
+				F612D4E91EEBBB5C00BBABF2 /* KVOViewController.h */,
+				F612D4EA1EEBBB5C00BBABF2 /* KVOViewController.m */,
+				F612D4EB1EEBBB5C00BBABF2 /* KVOViewController.xib */,
+				F612D4EE1EEBBBCF00BBABF2 /* Woman.h */,
+				F612D4EF1EEBBBCF00BBABF2 /* Woman.m */,
+				F612D4F41EEBCC6200BBABF2 /* CustomKVOViewController.h */,
+				F612D4F51EEBCC6200BBABF2 /* CustomKVOViewController.m */,
+				F612D4F11EEBC93400BBABF2 /* Man.h */,
+				F612D4F21EEBC93400BBABF2 /* Man.m */,
+			);
+			path = "KVO实现原理";
+			sourceTree = "<group>";
+		};
 		F6533BFC1EE82A3A00051ECC /* 消息转发 */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +280,7 @@
 		F67BA80B1EE2953800DAFC50 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
+				F612D4E81EEBBB4400BBABF2 /* KVO实现原理 */,
 				F612D4031EEA6F2200BBABF2 /* 修改私有属性 */,
 				F612D4041EEA6F2200BBABF2 /* 序列化 */,
 				F612D3FD1EEA69BE00BBABF2 /* 获取类的属性和方法 */,
@@ -411,6 +442,7 @@
 				F612D4121EEA7AF100BBABF2 /* MethodAndPropertyCell.xib in Resources */,
 				F6F5F4741EE8344700F9FE1B /* FirstViewController.xib in Resources */,
 				F67BA8191EE2953800DAFC50 /* Assets.xcassets in Resources */,
+				F612D4ED1EEBBB5C00BBABF2 /* KVOViewController.xib in Resources */,
 				F67BA8171EE2953800DAFC50 /* Main.storyboard in Resources */,
 				F612D4021EEA69E600BBABF2 /* MethodAndPropertyViewController.xib in Resources */,
 			);
@@ -442,6 +474,7 @@
 				F6533BFB1EE829F800051ECC /* RootViewController.m in Sources */,
 				F612D3FC1EEA648800BBABF2 /* Person.m in Sources */,
 				F612D3F01EEA5D7E00BBABF2 /* NSURL+Swizzling.m in Sources */,
+				F612D4EC1EEBBB5C00BBABF2 /* KVOViewController.m in Sources */,
 				F612D3F41EEA646600BBABF2 /* NSObject+Model.m in Sources */,
 				F612D3E71EEA4C2400BBABF2 /* UIGestureRecognizer+Block.m in Sources */,
 				F6533C071EE82A3A00051ECC /* ThirdViewController.m in Sources */,
@@ -450,12 +483,15 @@
 				F612D40A1EEA6FBF00BBABF2 /* SerializationController.m in Sources */,
 				F612D4071EEA6F8800BBABF2 /* ModifyPrivatePropertyController.m in Sources */,
 				F6533C051EE82A3A00051ECC /* FourViewController.m in Sources */,
+				F612D4F61EEBCC6200BBABF2 /* CustomKVOViewController.m in Sources */,
 				F67BA80E1EE2953800DAFC50 /* main.m in Sources */,
 				F612D3F81EEA647800BBABF2 /* DicMoldelViewController.m in Sources */,
 				F6F5F4731EE8344700F9FE1B /* FirstViewController.m in Sources */,
 				F612D4011EEA69E600BBABF2 /* MethodAndPropertyViewController.m in Sources */,
 				F612D3EC1EEA5D2200BBABF2 /* SwizzlingViewController.m in Sources */,
 				F612D3E41EEA4BF500BBABF2 /* OneViewController.m in Sources */,
+				F612D4F01EEBBBCF00BBABF2 /* Woman.m in Sources */,
+				F612D4F31EEBC93400BBABF2 /* Man.m in Sources */,
 				F612D40D1EEA704C00BBABF2 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

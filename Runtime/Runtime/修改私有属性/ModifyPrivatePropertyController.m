@@ -40,7 +40,6 @@
         const char * ivarType = ivar_getTypeEncoding(ivar);
         NSLog(@"属性: %s 类型: %s",ivarName,ivarType);
     }
-    
     //修改私有变量
     Ivar modify_age = ivars[1];
     object_setIvar(student, modify_age,@28);
@@ -69,7 +68,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (void)dealloc{
+    
+}
 /*
 #pragma mark - Navigation
 

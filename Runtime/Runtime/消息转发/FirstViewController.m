@@ -58,8 +58,8 @@
 }
 
 
-
-
-
+- (void)dealloc{
+    
+}
 
 @end
