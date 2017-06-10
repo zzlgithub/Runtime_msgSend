@@ -20,11 +20,12 @@
 }
 @end
 
-@implementation NSKVONotifying_Man
 
+@implementation NSKVONotifying_Man
 - (Class)class{
     return [Man class];
 }
+
 
 - (void)setName:(NSString *)name{
     //调用父类
@@ -36,8 +37,6 @@
     // 子类最终通知调用观察者的observer方法
     [obj observeValueForKeyPath:@"name" ofObject:self change:@{@"change":name} context:nil];
 }
-
-
 @end
 
 @implementation NSObject (Man)
