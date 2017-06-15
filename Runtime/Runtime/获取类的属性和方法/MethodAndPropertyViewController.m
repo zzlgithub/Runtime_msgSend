@@ -41,7 +41,8 @@ static NSString * const identifer = @"MethodAndPropertyCell";
     
     
     [self requestData];
-    
+    //    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    //需要设置估值高度 只设置 UITableViewAutomaticDimension 没有效果
     self.tableView.estimatedRowHeight = 80;
     [self.tableView registerNib:[UINib nibWithNibName:@"MethodAndPropertyCell" bundle:nil] forCellReuseIdentifier:identifer];
     
